@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:padding="5dp"
+                android:text="بانک مشاغل"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/header"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/profile" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/GetJobs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="لیست مشاغل" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="بازدید های اخیر من"
+            android:visibility="gone" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/AddJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="افزودن شغل" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/UpdateJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="شغل من(مدیریت)" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btnExit"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:onClick="Exit"
+                android:tint="@android:color/holo_blue_dark"
+                android:padding="5dp"
+                android:src="@drawable/ic_exit2"
+                android:tooltipText="خروج"
+                tools:ignore="UseAppTint" />
+
+            <ImageView
+                android:id="@+id/btnLogout"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:onClick="Logout"
+                android:tint="@android:color/holo_red_dark"
+                android:padding="5dp"
+                android:src="@drawable/ic_exit"
+                android:tooltipText="خروج از حساب"
+                tools:ignore="UseAppTint" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

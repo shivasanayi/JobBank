@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">https://greenapplication.ir/</domain>
+        <domain includeSubdomains="true">http://greenapplication.ir/</domain>
+        <domain includeSubdomains="true">https://www.greenapplication.ir/</domain>
+        <domain includeSubdomains="true">http://www.greenapplication.ir/</domain>
+    </domain-config>
+
+</network-security-config>
